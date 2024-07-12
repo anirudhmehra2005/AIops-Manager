@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-header img {
+    margin-right: 10px;
+}
+
+#chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #e9ecef;
+    color: black;
+}
+
+#input-container {
+    display: flex;
+    padding: 5px 10px;
+    border-top: 1px solid #ccc;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#send-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
